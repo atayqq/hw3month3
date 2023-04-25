@@ -13,6 +13,8 @@
 		6E12048529F2D78A0076B704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E12048329F2D78A0076B704 /* Main.storyboard */; };
 		6E12048729F2D78C0076B704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E12048629F2D78C0076B704 /* Assets.xcassets */; };
 		6E12048A29F2D78C0076B704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E12048829F2D78C0076B704 /* LaunchScreen.storyboard */; };
+		6E73FF3929F8510A005F5EE0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E73FF3829F8510A005F5EE0 /* TableViewController.swift */; };
+		6E73FF3F29F8538C005F5EE0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6E73FF3E29F8538C005F5EE0 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		6E12048629F2D78C0076B704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E12048929F2D78C0076B704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E12048B29F2D78C0076B704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E73FF3829F8510A005F5EE0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E73FF3F29F8538C005F5EE0 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				6E12047D29F2D78A0076B704 /* AppDelegate.swift */,
 				6E12047F29F2D78A0076B704 /* SceneDelegate.swift */,
 				6E12048129F2D78A0076B704 /* ViewController.swift */,
+				6E73FF3829F8510A005F5EE0 /* TableViewController.swift */,
 				6E12048329F2D78A0076B704 /* Main.storyboard */,
 				6E12048629F2D78C0076B704 /* Assets.xcassets */,
 				6E12048829F2D78C0076B704 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = hw3month3;
+			packageProductDependencies = (
+				6E73FF3E29F8538C005F5EE0 /* IQKeyboardManagerSwift */,
+			);
 			productName = hw3month3;
 			productReference = 6E12047A29F2D78A0076B704 /* hw3month3.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 6E12047129F2D78A0076B704;
+			packageReferences = (
+				6E73FF3D29F8538C005F5EE0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 6E12047B29F2D78A0076B704 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				6E12048229F2D78A0076B704 /* ViewController.swift in Sources */,
 				6E12047E29F2D78A0076B704 /* AppDelegate.swift in Sources */,
 				6E12048029F2D78A0076B704 /* SceneDelegate.swift in Sources */,
+				6E73FF3929F8510A005F5EE0 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E73FF3D29F8538C005F5EE0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E73FF3E29F8538C005F5EE0 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E73FF3D29F8538C005F5EE0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E12047229F2D78A0076B704 /* Project object */;
 }
